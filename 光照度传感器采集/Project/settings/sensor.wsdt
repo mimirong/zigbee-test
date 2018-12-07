@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<Workspace>
+  <ConfigDictionary>
+    
+  <CurrentConfigs><Project>sensor/gm_sensor</Project></CurrentConfigs></ConfigDictionary>
+  <Desktop>
+    <Static>
+      <Workspace>
+        <ColumnWidths>
+          
+          
+          
+          
+        <Column0>215</Column0><Column1>27</Column1><Column2>27</Column2><Column3>27</Column3></ColumnWidths>
+      </Workspace>
+      <Build>
+        
+        
+        
+        
+      <ColumnWidth0>20</ColumnWidth0><ColumnWidth1>753</ColumnWidth1><ColumnWidth2>201</ColumnWidth2><ColumnWidth3>50</ColumnWidth3></Build>
+    <TerminalIO/><Find-in-Files><ColumnWidth0>496</ColumnWidth0><ColumnWidth1>70</ColumnWidth1><ColumnWidth2>850</ColumnWidth2></Find-in-Files><Debug-Log><ColumnWidth0>19</ColumnWidth0><ColumnWidth1>1382</ColumnWidth1></Debug-Log></Static>
+    <Windows>
+      
+      
+    <Wnd2>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-28472-18310</Identity>
+            <TabName>Workspace</TabName>
+            <Factory>Workspace</Factory>
+            <Session>
+              
+            <NodeDict><ExpandedNode>sensor</ExpandedNode><ExpandedNode>sensor/Output</ExpandedNode><ExpandedNode>sensor/app</ExpandedNode><ExpandedNode>sensor/basicrf</ExpandedNode><ExpandedNode>sensor/board</ExpandedNode><ExpandedNode>sensor/common</ExpandedNode><ExpandedNode>sensor/mylib</ExpandedNode><ExpandedNode>sensor/sensor_drv</ExpandedNode><ExpandedNode>sensor/utils</ExpandedNode></NodeDict></Session>
+          </Tab>
+        </Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd2><Wnd3>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-7122-20962</Identity>
+            <TabName>Build</TabName>
+            <Factory>Build</Factory>
+            <Session/>
+          </Tab>
+        <Tab><Identity>TabID-10889-10528</Identity><TabName>Find in Files</TabName><Factory>Find-in-Files</Factory><Session/></Tab><Tab><Identity>TabID-26991-11250</Identity><TabName>Debug Log</TabName><Factory>Debug-Log</Factory><Session/></Tab></Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd3></Windows>
+    <Editor>
+      
+      
+      
+      
+    <Pane><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\sensor.c</Filename><XPos>0</XPos><YPos>52</YPos><SelStart>1831</SelStart><SelEnd>1831</SelEnd></Tab><ActiveTab>0</ActiveTab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\collect.c</Filename><XPos>0</XPos><YPos>6</YPos><SelStart>2258</SelStart><SelEnd>2258</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\sensor_drv\get_adc.c</Filename><XPos>0</XPos><YPos>20</YPos><SelStart>1379</SelStart><SelEnd>1379</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\CC2530_lib\mylib\UART_PRINT.c</Filename><XPos>0</XPos><YPos>55</YPos><SelStart>1271</SelStart><SelEnd>1271</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\CC2530_lib\common\hal_defs.h</Filename><XPos>0</XPos><YPos>77</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\CC2530_lib\common\hal_uart.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\CC2530_lib\board\hal_board.h</Filename><XPos>0</XPos><YPos>291</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\CC2530_lib\common\hal_mcu.c</Filename><XPos>0</XPos><YPos>69</YPos><SelStart>3020</SelStart><SelEnd>3020</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\CC2530_lib\mylib\TIMER.c</Filename><XPos>0</XPos><YPos>32</YPos><SelStart>1046</SelStart><SelEnd>1046</SelEnd></Tab></Pane><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
+    <Positions>
+      
+      
+      
+      
+      
+    <Top><Row0><Sizes><Toolbar-00e20c08><key>iaridepm.enu1</key></Toolbar-00e20c08></Sizes></Row0><Row1><Sizes/></Row1><Row2><Sizes/></Row2><Row3><Sizes><Toolbar-0a3494f0><key>debuggergui.enu1</key></Toolbar-0a3494f0></Sizes></Row3></Top><Left><Row0><Sizes><Wnd2><Rect><Top>-2</Top><Left>-2</Left><Bottom>530</Bottom><Right>306</Right><x>-2</x><y>-2</y><xscreen>271</xscreen><yscreen>289</yscreen><sizeHorzCX>188194</sizeHorzCX><sizeHorzCY>353301</sizeHorzCY><sizeVertCX>213889</sizeVertCX><sizeVertCY>650367</sizeVertCY></Rect></Wnd2></Sizes></Row0></Left><Right><Row0><Sizes/></Row0></Right><Bottom><Row0><Sizes><Wnd3><Rect><Top>-2</Top><Left>-2</Left><Bottom>243</Bottom><Right>1442</Right><x>-2</x><y>-2</y><xscreen>1444</xscreen><yscreen>245</yscreen><sizeHorzCX>1002778</sizeHorzCX><sizeHorzCY>299511</sizeHorzCY><sizeVertCX>188194</sizeVertCX><sizeVertCY>353301</sizeVertCY></Rect></Wnd3></Sizes></Row0></Bottom><Float><Sizes/></Float></Positions>
+  </Desktop>
+</Workspace>
+
+

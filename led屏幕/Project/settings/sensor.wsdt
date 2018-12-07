@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<Workspace>
+  <ConfigDictionary>
+    
+  <CurrentConfigs><Project>sensor/LED_sensor</Project></CurrentConfigs></ConfigDictionary>
+  <Desktop>
+    <Static>
+      <Workspace>
+        <ColumnWidths>
+          
+          
+          
+          
+        <Column0>177</Column0><Column1>27</Column1><Column2>27</Column2><Column3>27</Column3></ColumnWidths>
+      </Workspace>
+      <Build>
+        
+        
+        
+        
+      <ColumnWidth0>20</ColumnWidth0><ColumnWidth1>753</ColumnWidth1><ColumnWidth2>201</ColumnWidth2><ColumnWidth3>50</ColumnWidth3></Build>
+    <TerminalIO/><Debug-Log><ColumnWidth0>26</ColumnWidth0><ColumnWidth1>1375</ColumnWidth1></Debug-Log><Find-in-Files><ColumnWidth0>496</ColumnWidth0><ColumnWidth1>70</ColumnWidth1><ColumnWidth2>850</ColumnWidth2></Find-in-Files></Static>
+    <Windows>
+      
+      
+    <Wnd0>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-28472-18310</Identity>
+            <TabName>Workspace</TabName>
+            <Factory>Workspace</Factory>
+            <Session>
+              
+            <NodeDict><ExpandedNode>sensor</ExpandedNode><ExpandedNode>sensor/Output</ExpandedNode><ExpandedNode>sensor/app</ExpandedNode><ExpandedNode>sensor/basicrf</ExpandedNode><ExpandedNode>sensor/board</ExpandedNode><ExpandedNode>sensor/common</ExpandedNode><ExpandedNode>sensor/mylib</ExpandedNode><ExpandedNode>sensor/sensor_drv</ExpandedNode><ExpandedNode>sensor/utils</ExpandedNode></NodeDict></Session>
+          </Tab>
+        </Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd0><Wnd1>
+        <Tabs>
+          <Tab>
+            <Identity>TabID-7122-20962</Identity>
+            <TabName>Build</TabName>
+            <Factory>Build</Factory>
+            <Session/>
+          </Tab>
+        <Tab><Identity>TabID-22657-13025</Identity><TabName>Debug Log</TabName><Factory>Debug-Log</Factory><Session/></Tab><Tab><Identity>TabID-17321-24423</Identity><TabName>Find in Files</TabName><Factory>Find-in-Files</Factory><Session/></Tab></Tabs>
+        
+      <SelectedTab>0</SelectedTab></Wnd1></Windows>
+    <Editor>
+      
+      
+      
+      
+    <Pane><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\sensor.c</Filename><XPos>0</XPos><YPos>121</YPos><SelStart>4499</SelStart><SelEnd>4499</SelEnd></Tab><ActiveTab>0</ActiveTab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\collect.c</Filename><XPos>0</XPos><YPos>15</YPos><SelStart>1040</SelStart><SelEnd>1040</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\sensor_drv\sh10.c</Filename><XPos>0</XPos><YPos>266</YPos><SelStart>7794</SelStart><SelEnd>7794</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\CC2530_lib\board\hal_board.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>518</SelStart><SelEnd>518</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\CC2530_lib\mylib\UART_PRINT.c</Filename><XPos>0</XPos><YPos>86</YPos><SelStart>1816</SelStart><SelEnd>1816</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\CC2530_lib\mylib\TIMER.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>70</SelStart><SelEnd>84</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\CC2530_lib\common\TIMER.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\..\CC2530_lib\common\hal_uart.c</Filename><XPos>0</XPos><YPos>13</YPos><SelStart>4556</SelStart><SelEnd>4556</SelEnd></Tab></Pane><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
+    <Positions>
+      
+      
+      
+      
+      
+    <Top><Row0><Sizes><Toolbar-00ed0c08><key>iaridepm.enu1</key></Toolbar-00ed0c08></Sizes></Row0><Row1><Sizes/></Row1><Row2><Sizes/></Row2></Top><Left><Row0><Sizes><Wnd0><Rect><Top>-2</Top><Left>-2</Left><Bottom>663</Bottom><Right>251</Right><x>-2</x><y>-2</y><xscreen>167</xscreen><yscreen>313</yscreen><sizeHorzCX>115972</sizeHorzCX><sizeHorzCY>382641</sizeHorzCY><sizeVertCX>175694</sizeVertCX><sizeVertCY>812958</sizeVertCY></Rect></Wnd0></Sizes></Row0></Left><Right><Row0><Sizes/></Row0></Right><Bottom><Row0><Sizes><Wnd1><Rect><Top>-2</Top><Left>-2</Left><Bottom>110</Bottom><Right>1442</Right><x>-2</x><y>-2</y><xscreen>1444</xscreen><yscreen>112</yscreen><sizeHorzCX>1002778</sizeHorzCX><sizeHorzCY>136919</sizeHorzCY><sizeVertCX>115972</sizeVertCX><sizeVertCY>382641</sizeVertCY></Rect></Wnd1></Sizes></Row0></Bottom><Float><Sizes/></Float></Positions>
+  </Desktop>
+</Workspace>
+
+
