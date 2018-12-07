@@ -24,12 +24,16 @@ uint16 uRxlen = 0;
 
  
 /*****点对点通讯地址设置******/
-#define RF_CHANNEL                20           // 频道 11~26
-#define PAN_ID                    0x0202      //网络id 
-#define MY_ADDR                   0x1204      // 本机模块地址
-#define SEND_ADDR3                0x1203     //LED
-#define SEND_ADDR5                0x1205     //风扇
-#define SEND_ADDR6                0x1206    //灯
+#define RF_CHANNEL                16           // 频道 11~26
+#define PAN_ID                    0x0303      //网络id 
+#define MY_ADDR                   0x3804      // 本机模块地址
+#define SEND_ADDR3                0x3803     //LED
+#define SEND_ADDR5                0x3805     //风扇
+#define SEND_ADDR6                0x3806    //灯
+#define SEND_ADDR7                0x3807    //告警灯
+
+
+
 /**************************************************/
 static basicRfCfg_t basicRfConfig;
 /******************************************/
@@ -87,16 +91,24 @@ void main(void)
       if(len > 0)
       {
         halLedToggle(3);       // 绿灯取反，无线发送指示
-        if(uRxData[0]=='1'){basicRfSendPacket(SEND_ADDR5, uRxData,len);}
-        else if(uRxData[0]=='2')
+        if(uRxData[0]=='1'){basicRfSendPacket(SEND_ADDR5, uRxData,len);}//风扇
+        else if(uRxData[0]=='2')//led灯
         {
           uRxData[0]='1';
           basicRfSendPacket(SEND_ADDR6, uRxData,len);
+        }
+       
+        else if(uRxData[0]=='7')//告警灯
+        {
+          uRxData[0]='1';
+          basicRfSendPacket(SEND_ADDR7, uRxData,len);
         }
         else
         {
           basicRfSendPacket(SEND_ADDR3, uRxData,len);
         }
+        if(uRxData[0]=='0'){basicRfSendPacket(SEND_ADDR7, uRxData,len);}
+        
             //把串口数据通过zigbee发送出去            
       }
       
@@ -149,7 +161,7 @@ void main(void)
             }
             /////////////////////////////////////////////////////数据备份
             /////////////////////////////////////////////////灯的反馈自动控制
-            if(uTxData[3]<'5')//光照强度小于0.5，打开灯
+            if((uTxData[3]<'5')&(uTxData[1]<'1'))//光照强度小于0.5，打开灯
             {
               uRxData[0]='1';uRxData[1]='1';
               basicRfSendPacket(SEND_ADDR6, uRxData,2);
@@ -160,20 +172,99 @@ void main(void)
               basicRfSendPacket(SEND_ADDR6, uRxData,2);
             }
             //////////////////////////////////////////////////灯的反馈自动控制
+            
+
+            
+          /*  if((uTxData[6]>='1')&(uTxData[7]>='5'))//温度度大于15，打开风扇
+            {
+              //uRxData[0]='1';uRxData[1]='1';
+                uRxData[0]=0xCE ;
+                uRxData[1]=0xC2 ;
+                uRxData[2]=0xB6 ;
+                uRxData[3]=0xC8 ;
+                uRxData[4]=0xB9 ;
+                uRxData[5]=0xFD ;
+                uRxData[6]=0xB8 ;
+                uRxData[7]=0xDF ;
+              basicRfSendPacket(SEND_ADDR3, uRxData,8);
+              
+              basicRfSendPacket(SEND_ADDR3, uRxData,len);
+                uRxData[0]='1';
+                uRxData[1]='1';
+              basicRfSendPacket(SEND_ADDR5, uRxData,2);
+                uRxData[0]='1';
+                uRxData[1]='1';
+              basicRfSendPacket(SEND_ADDR7, uRxData,2);
+              
+            }
+            else
+            {
+              uRxData[0]='1';uRxData[1]='0';
+              basicRfSendPacket(SEND_ADDR7, uRxData,2);
+              basicRfSendPacket(SEND_ADDR5, uRxData,2);
+            }*/
+            //////////////////////////////////////////////////灯的反馈自动控制
             k1=k1+1;
-            if(k1==15)
-            {   
+            if(k1==20)
+            {  
+              
+              
             uRxData[0]=0xCE;
             uRxData[1]=0xC2;
             uRxData[2]=0xB6;
             uRxData[3]=0xC8;
             uRxData[4]=uTxData[6];
             uRxData[5]=uTxData[7];
-            uRxData[6]=uTxData[8];
+            uRxData[6]=uTxData[8];            ///led温度显示
             uRxData[7]=uTxData[9];
             uRxData[8]=0xB6;
             uRxData[9]=0xC8;
             basicRfSendPacket(SEND_ADDR3, uRxData,10);
+                if((uTxData[6]>='1')&(uTxData[7]>='5'))//温度度大于15，打开风扇
+            {
+              //uRxData[0]='1';uRxData[1]='1';
+                uRxData[0]=0xCE ;
+                uRxData[1]=0xC2 ;
+                uRxData[2]=0xB6 ;
+                uRxData[3]=0xC8 ;
+                uRxData[4]=0xB9 ;    ///温度过高
+                uRxData[5]=0xFD ;
+                uRxData[6]=0xB8 ;
+                uRxData[7]=0xDF ;
+                
+                uRxData[8]=0x2D;  //-
+                uRxData[9]=0x2D;  //-
+                
+                uRxData[10]=0xCE;
+                uRxData[11]=0xC2;
+                uRxData[12]=0xB6;
+                uRxData[13]=0xC8;
+                uRxData[14]=uTxData[6];
+                uRxData[15]=uTxData[7];
+                uRxData[16]=uTxData[8];            ///led温度显示
+                uRxData[17]=uTxData[9];
+                uRxData[18]=0xB6;
+                uRxData[19]=0xC8;
+               basicRfSendPacket(SEND_ADDR3, uRxData,20);
+              
+              
+                uRxData[0]='1';
+                uRxData[1]='1';
+              basicRfSendPacket(SEND_ADDR5, uRxData,2);
+                uRxData[0]='1';
+                uRxData[1]='1';
+              basicRfSendPacket(SEND_ADDR7, uRxData,2);
+              
+            }
+            else
+            {
+              uRxData[0]='1';uRxData[1]='0';
+              basicRfSendPacket(SEND_ADDR7, uRxData,2);
+              basicRfSendPacket(SEND_ADDR5, uRxData,2);
+            }
+              
+              
+          
             k1=0;
             }
             //数据发送到PC机

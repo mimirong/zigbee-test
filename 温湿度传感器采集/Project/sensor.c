@@ -27,10 +27,10 @@ uint16 uRxlen = 0;
 
 
 /*****点对点通讯地址设置******/
-#define RF_CHANNEL                20           // 频道 11~26
-#define PAN_ID                    0x0202      //网络id 
-#define MY_ADDR                   0x1202      // 本机模块地址
-#define SEND_ADDR                 0x1204     //发送地址
+#define RF_CHANNEL                16           // 频道 11~26
+#define PAN_ID                    0x0303      //网络id 
+#define MY_ADDR                   0x3802      // 本机模块地址
+#define SEND_ADDR                 0x3804     //发送地址
 /**************************************************/
 static basicRfCfg_t basicRfConfig;
 uint8   APP_SEND_DATA_FLAG;

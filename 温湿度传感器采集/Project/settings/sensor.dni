@@ -1,5 +1,5 @@
 [DebugChecksum]
-Checksum=-923706299
+Checksum=1603282923
 [DisAssemblyWindow]
 NumStates=_ 1
 State 1=_ 1
@@ -49,5 +49,6 @@ Count=0
 Stop timers on halt=0
 Leave target running=1
 [Aliases]
-Count=0
+A0=_ "F:\code\RFBASE\CC2530_lib\basicrf\basic_rf.c" ""
+Count=1
 SuppressDialog=0
